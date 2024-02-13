@@ -1,4 +1,4 @@
-module github.com/selvinkumaran/Learn-Go
+module Module
 
 go 1.21.6
 
