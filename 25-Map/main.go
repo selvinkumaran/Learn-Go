@@ -39,7 +39,7 @@ func main() {
 	}
 
 	//This will print the key
-	for v, _ := range m {
+	for v := range m {
 		fmt.Println(v)
 	}
 
@@ -54,14 +54,14 @@ func main() {
 	}
 
 	fmt.Println("***************************")
-	
+
 	for _, v := range xi {
 		fmt.Println(v)
 	}
 
 	fmt.Println("***************************")
 
-	for v, _ := range xi {
+	for v := range xi {
 		fmt.Println(v)
 	}
 
