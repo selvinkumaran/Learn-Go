@@ -39,3 +39,11 @@ func (d *dog) run() {
 	d.name = "new changed"
 	fmt.Println("my name is ", d.name, "I am walking")
 }
+
+/*
+
+  Receiver           Values
+   (t T)	    	T and *T
+   (t *T)	     	*T
+
+*/
