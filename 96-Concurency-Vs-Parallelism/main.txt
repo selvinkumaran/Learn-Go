@@ -1,0 +1,10 @@
+Concurrency VS Parallelism
+
+--> Concurrency doesn't guarantee that tasks will run in true parallel
+
+Concurrency
+------------
+--> It is about structuring your program in a way that allows multiple tasks to be executed concurrently, often to improve efficiency and responsiveness.
+Parallelism 
+-----------
+--> It is about executing multiple tasks simultaneously, leveraging multiple processors or cores to speed up computation.
