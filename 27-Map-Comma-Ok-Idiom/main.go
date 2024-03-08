@@ -25,7 +25,7 @@ func main() {
 		fmt.Println("The value does not exixts")
 
 	}
-	
+
 	if v, ok := m["selvin"]; !ok {
 		fmt.Println("The value does not exixts")
 	} else {

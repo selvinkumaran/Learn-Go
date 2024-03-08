@@ -15,5 +15,5 @@ func main() {
 
 // pointer semantics
 func addOneP(a *int) {
-	*a += 1
+	*a++
 }

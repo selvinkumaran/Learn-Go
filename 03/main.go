@@ -1,10 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+	"sync"
+)
 
-func main(){
+var wg sync.WaitGroup
 
-fmt.Println("hello go")
-
+func main() {
+	wg.Add(2)
+	fmt.Println("start", runtime.NumGoroutine())
+	go func() {
+		fmt.Println("sum 1")
+		wg.Done()
+	}()
+	go func() {
+		fmt.Println("sum 2")
+		wg.Done()
+	}()
+	go func() {
+		fmt.Println("sum 3")
+		wg.Done()
+	}()
+	go func() {
+		fmt.Println("sum 4")
+		wg.Done()
+	}()
+	wg.Wait()
+	fmt.Println("end", runtime.NumGoroutine())
 }
- 

@@ -9,7 +9,7 @@ type circle struct {
 	radius float64
 }
 
-type Shape interface {
+type shape interface {
 	Area() float64
 }
 
@@ -17,7 +17,7 @@ func (c *circle) Area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
-func Info(s Shape) {
+func Info(s shape) {
 	fmt.Println(s.Area())
 }
 
@@ -26,6 +26,6 @@ func main() {
 	c := circle{
 		4,
 	}
-	// Info(c) //if use pass value it wont work ,You have pass address(pointer) of the value
+	// info(c) //if use pass value it wont work ,You have pass address(pointer) of the value
 	fmt.Println(c.Area())
 }

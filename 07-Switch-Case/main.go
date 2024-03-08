@@ -5,7 +5,7 @@ import (
 	"math/rand"
 )
 
-func init(){
+func init() {
 	fmt.Print("I'm init function")
 }
 
