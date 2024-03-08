@@ -7,7 +7,7 @@ type person struct {
 	lastName  string
 }
 
-// method
+//method
 func (p person) /*receiver*/ speak() {
 	fmt.Println(p.firstName, p.lastName)
 }

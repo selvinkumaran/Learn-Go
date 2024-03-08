@@ -5,35 +5,35 @@ import "fmt"
 func main() {
 
 	type person struct {
-		firstName string
-		lastName  string
-		age       int
+		first_name string
+		last_name  string
+		age        int
 	}
 
 	type student struct {
 		person
-		firstName string
-		graduated bool
+		first_name string
+		graduated  bool
 	}
 
 	s1 := student{
 		person: person{
-			firstName: "sambath",
-			lastName:  "kumar",
-			age:       23,
+			first_name: "sambath",
+			last_name:  "kumar",
+			age:        23,
 		},
-		firstName: "New Name",
-		graduated: false,
+		first_name: "New Name",
+		graduated:  false,
 	}
 
 	s2 := student{
 		person: person{
-			firstName: "mani",
-			lastName:  "kumar",
-			age:       43,
+			first_name: "mani",
+			last_name:  "kumar",
+			age:        43,
 		},
-		firstName: "old Name",
-		graduated: true,
+		first_name: "old Name",
+		graduated:  true,
 	}
 
 	fmt.Println(s1)
@@ -41,6 +41,6 @@ func main() {
 
 	fmt.Printf("%T \t %#v \n", s1, s1)
 
-	fmt.Println(s1.firstName, s1.lastName, s1.age, s1.person.firstName)
+	fmt.Println(s1.first_name, s1.last_name, s1.age, s1.person.first_name)
 
 }

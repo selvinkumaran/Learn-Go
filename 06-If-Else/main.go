@@ -18,7 +18,7 @@ func main() {
 
 	fmt.Println()
 
-	y := 20
+	y :=20
 	if y > 20 {
 		fmt.Printf("%v is greater than 20", y)
 	} else if y == 20 {

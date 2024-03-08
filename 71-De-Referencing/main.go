@@ -10,7 +10,7 @@ func main() {
 
 	y := &x
 	fmt.Println(y)
-
+ 
 	*y = 43
 	fmt.Println(x)
 	fmt.Println(*y)

@@ -15,9 +15,9 @@ func main() {
 		last_name:  "kumar",
 		ice_cream:  []string{"chocalate", "vanila"},
 	}
-	p2 := person{first_name: "mani",
-		last_name: "kumar",
-		ice_cream: []string{"straberry", "black current"},
+	p2 := person{		first_name: "mani",
+		last_name:  "kumar",
+		ice_cream:  []string{"straberry", "black current"},
 	}
 
 	fmt.Println(p1)

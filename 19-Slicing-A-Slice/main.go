@@ -20,6 +20,6 @@ func main() {
 	fmt.Println(xi[:])
 	fmt.Println("---------------------")
 
-	fmt.Printf("%#v", xi)
+	fmt.Printf("%#v",xi)
 
 }

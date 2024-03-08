@@ -15,7 +15,7 @@ func main() {
 
 	sort.Ints(xi)
 	sort.Strings(xs)
-
+	
 	fmt.Println("After Sorting")
 	fmt.Println(xi)
 	fmt.Println(xs)
