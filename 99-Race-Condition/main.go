@@ -11,10 +11,10 @@ func main() {
 	fmt.Println("GOrountine:", runtime.NumGoroutine())
 
 	counter := 0
-	const gs = 100
+	const numGoroutines = 100
 	var ws sync.WaitGroup
-	ws.Add(gs)
-	for i := 0; i < gs; i++ {
+	ws.Add(numGoroutines)
+	for i := 0; i < numGoroutines; i++ {
 		go func() {
 			v := counter
 			// time.Sleep(time.Second)
@@ -29,3 +29,34 @@ func main() {
 	fmt.Println("COUNT:", counter)
 	fmt.Println("Gorountine:", runtime.NumGoroutine())
 }
+
+// Another example
+/*
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+var wg sync.WaitGroup
+var mu sync.Mutex
+
+var count = 0
+
+func main() {
+	wg.Add(1001)
+	for i := 0; i <= 1000; i++ {
+		go func() {
+			mu.Lock()
+			count++
+			fmt.Println("count", count)
+			mu.Unlock()
+			wg.Done()
+		}()
+	}
+	wg.Wait()
+	fmt.Println("Finish")
+}
+
+*/
