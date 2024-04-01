@@ -28,7 +28,7 @@ func main() {
 
 	fmt.Println("*************************")
 
-	xi = append(xi, 14, 15, 16, 17, 18, 19, 20, 21)
+	xi = append(xi, 14, 15, 16, 17, 18, 19, 20)
 	fmt.Println(xi)
 	fmt.Println("length", len(xi))
 	fmt.Println("capacity", cap(xi))

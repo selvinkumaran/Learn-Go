@@ -15,7 +15,7 @@ func main() {
 		last_name:  "kumar",
 		age:        23,
 	}
-	p2 := person{
+	p2 := person{	
 		first_name: "mani",
 		last_name:  "kumar",
 		age:        43,

@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("The sum is ", result)
 }
 
-//The variatic parameter have to come last
+// The variatic parameter have to come last
 func sum(nums ...int /*unlimited type*/) int {
 	fmt.Println(nums)
 	fmt.Printf("%T\n", nums)

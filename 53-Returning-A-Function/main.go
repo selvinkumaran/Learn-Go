@@ -22,4 +22,3 @@ func bar() func() int {
 		return 43
 	}
 }
- 
