@@ -1,3 +1,4 @@
+/*
 package main
 
 import (
@@ -29,9 +30,9 @@ func main() {
 	fmt.Println("COUNT:", counter)
 	fmt.Println("Gorountine:", runtime.NumGoroutine())
 }
-
+*/
 // Another example
-/*
+
 package main
 
 import (
@@ -45,8 +46,8 @@ var mu sync.Mutex
 var count = 0
 
 func main() {
-	wg.Add(1001)
-	for i := 0; i <= 1000; i++ {
+	wg.Add(100)
+	for i := 0; i <= 100; i++ {
 		go func() {
 			mu.Lock()
 			count++
@@ -59,4 +60,4 @@ func main() {
 	fmt.Println("Finish")
 }
 
-*/
+

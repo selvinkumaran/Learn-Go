@@ -14,7 +14,7 @@ func main() {
 	var counter int64
 	const gs = 100
 	var ws sync.WaitGroup
-	ws.Add(gs)
+	ws.Add(gs)	
 	for i := 0; i < gs; i++ {
 		go func() {
 			atomic.AddInt64(&counter, 1)
