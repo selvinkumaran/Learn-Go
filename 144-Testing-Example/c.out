@@ -1,0 +1,5 @@
+mode: set
+Module/144-Testing-Example/main.go:3.14,4.2 0 0
+Module/144-Testing-Example/main.go:6.28,8.23 2 1
+Module/144-Testing-Example/main.go:8.23,10.3 1 1
+Module/144-Testing-Example/main.go:11.2,11.12 1 1

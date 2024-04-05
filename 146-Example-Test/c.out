@@ -1,0 +1,4 @@
+mode: set
+Module/146-Example-Test/main.go:5.29,7.23 2 1
+Module/146-Example-Test/main.go:7.23,9.3 1 1
+Module/146-Example-Test/main.go:10.2,10.12 1 1
